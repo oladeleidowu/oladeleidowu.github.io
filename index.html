@@ -2,535 +2,481 @@
 <html lang="en">
 
 <head>
-
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>PortfolioPerfect</title>
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
-    <!-- Favicon
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo2.png">
-
-    <!-- Stylesheets
-    ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oladele Idowu - Back-end developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-
-    <header id="masthead" class="site-header" data-anchor-target=".hero"
-        data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);"
-        data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
-        <nav id="primary-navigation" class="site-navigation">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-
-                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse"
-                        aria-expanded="false">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <a href="#hero" class="site-logo"><img src="assets/img/logo2.png" alt="logo"></a>
-
-                </div><!-- /.navbar-header -->
-
-                <div class="main-menu" id="portfolio-perfect-collapse">
-
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li class="page-scroll"><a href="#hero">Home</a></li>
-                        <li class="page-scroll"><a href="#about">About</a></li>
-                        <li class="page-scroll"><a href="#service">Service</a></li>
-                        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
-                        <li class="page-scroll"><a href="#contact">Contact</a></li>
-
-                    </ul><!-- /.navbar-nav -->
-
-                </div><!-- /.navbar-collapse -->
-
-            </div>
-        </nav><!-- /.primary-navigation -->
-    </header><!-- /#header -->
-
-    <div id="hero" class="hero">
+    <div class="navbar">
         <div class="container">
-            <div class="row">
-
-                <div class="col-md-6">
-                    <h1>Oladele Idowu</h1>
-                    <div class="page-scroll">
-                        <p class="job-title">Junior Software Engineer</p>
-                        <a href="#contact" class="btn btn-fill ">Hire me</a>
-                        <div class="clearfix visible-xxs"></div>
-                        <a href="#portfolio" class="btn btn-border">Explore more</a>
-                    </div>
+            <div class="logo"><a href="/index.html">Oladele.<span>bim</span></a></div>
+            <ul class="pages">
+                <li><span>A.</span><a href="#about">About</a></li>
+                <li><span>B.</span><a href="#skills">Skills</a></li>
+                <li><span>C.</span><a href="#projects">Projects</a></li>
+                <li><span>D.</span><a href="#contact">Contact</a></li>
+                <li class="resume"><a href="Resume.pdf" target="_blank">Resume</a></li>
+                <button class="hamburger" id="menu-btn" type="button">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-menu" id="menu">
+        <div class="inner-menu">
+            <ul class="pages">
+                <li><span>A.</span><a href="#about">About</a></li>
+                <li><span>B.</span><a href="#skills">Skills</a></li>
+                <li><span>C.</span><a href="#projects">Projects</a></li>
+                <li><span>D.</span><a href="#contact">Contact</a></li>
+                <li class="resume btn"><a href="Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="hero">
+            <div class="container">
+                <span>Hi, my name is</span>
+                <h1 class="title">Oladele Idowu.</h1>
+                <h1 class="lead">A Back-End Developer.</h1>
+                <p>Skilled and Specialised in building things that live on the internet.</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/bimcode" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/oladeleidowu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abimbola0915/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/+2348029958673" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto: abimbollah@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="line"></div>
                 </div>
-
-                <div class="col-md-6 text-right">
-                    <img class="" src="assets/img/oladele.png" alt="alex-vidal">
-                </div>
-
+                <button class="btn"><a href="#projects">My projects</a></button>
             </div>
         </div>
-    </div><!-- /.hero -->
+    </header>
+    <section class="about py-5" id="about">
+        <div class="container">
+            <h1 class="sec-head">About Me</h1>
+            <div class="about-content py-1">
+                <div class="contents">
+                    <p>Hello! My name is Oladele and I enjoy creating things that live on the internet. My interest in
+                        web development started in 2019 when I decided on transitioning from Accounting / Auditing Firm
+                        to join the Tech World, So I started editing custom themes — HTML & CSS taught me a lot of
+                        things!
 
-    <main id="main" class="site-main">
+                        Fast-forward to today, and I've had the privilege of working at digital banking, a start-up and
+                        huge corporation as Java Backend Developer, My main focus these days is building accessible,
+                        inclusive products and digital experiences at Upstatement for a variety of clients.
 
-        <section id="about" class="site-section section-about text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h2>About</h2>
-                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                        <p style="text-align:justify;">Hello! My name is Oladele and I enjoy creating things that
-                            live on the internet. My
-                            interest in web development started in 2019 when I decided to try to leave Accounting /
-                            Auditing Firm to join the Tech World, So I started editing custom themes — HTML & CSS taught
-                            me a lot of things!
-
-                        <p style="text-align:justify;">Fast-forward to today, and I've had the privilege of working at
-                            digital banking, a start-up
-                            and huge corporation, My main focus these days is building accessible, inclusive products
-                            and digital experiences at Upstatement for a variety of clients.</p>
-
-                        <p style="text-align:justify;">Below are a few technologies I've been working with recently</p>
-                        <a href="assets/doc/MyResume.pdf" class="btn btn-fill" target="_blank" download>Download my
-                            cv</a>
-                    </div>
+                        interest in development, and not just development when it comes to programming, but development
+                        in a broader context.</p>
+                    <p class="my-1">I gained an interest in Front-End development during the Covid-19 lockdown period
+                        and have worked hard to develop my skills to a level at which I can be proud of, tho that
+                        doesn't mean I will be stopping here.</p>
+                </div>
+                <div class="img">
+                    <img src="/images/bimd.png" alt="">
                 </div>
             </div>
-        </section><!-- /.secton-about -->
-
-        <section class="site-section section-skills">
-            <div class="container">
-                <div class="text-center">
-                    <h3>My Skills</h3>
-                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+        </div>
+    </section>
+    <section class="skills py-5" id="skills">
+        <div class="container">
+            <div class="skills-header">
+                <h1 class="sec-head">Skillset</h1>
+                <p class="my-2">
+                    With skills in various design and programming languages, I am the perfect person to hire when it
+                    comes to full fledged static websites. Whatever your needs are, I can pretty much take on any
+                    challenge.
+                </p>
+            </div>
+            <div class="skill-set">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java SE</h2>
+                    <span>I can give your site the breath of life that it needs, be it date functions, APIs, Conducting
+                        software analysis, programming, testing, and debugging
+                        responsiveness, CRUD and RESTful APIs content from the client side and so much more.</span>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="skill">
-                            <h4>Html/css</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div>
-                                <!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                        <div class="skill">
-                            <h4>Python</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div>
-                                <!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill">
-                            <h4>JAVA</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div>
-                                <!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                        <div class="skill">
-                            <h4>Springboot</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="66"></div>
-                                <!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill">
-                            <h4>Asp.Net(C#)</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="97"></div>
-                                <!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                        <div class="skill">
-                            <h4>SQL</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="45"></div>
-                                <!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                    </div>
+                <div>
+                    <i class="fa-solid fa-leaf"></i>
+                    <h2>SpringBoot</h2>
+                    <span>With this Java-based framework, I can setup, build, develop and deploy a scalable web
+                        applications, Spring boot provides a simple and efficient for creating production-grade,
+                        standalone applications.</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <span>SQL skills help me maintain, create and retrieve information from relational databases, which
+                        separate data into columns and rows. It also allows me to access, update, manipulate, insert and
+                        modify data efficiently.</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>JHipster</h2>
+                    <span>JHipster is a development platform to generate, develop and deploy Spring Boot + Angular Web
+                        applications, Spring microservice and monolithic.</span>
+                </div>
+                <div>
+                    <i class="fa-brands fa-docker"></i>
+                    <h2>Docker</h2>
+                    <span>Docker is an open platform for developing, shipping, and running applications. With Docker, I
+                        can manage my infrastructure in the same ways i manage my applications.</span>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Layout</h2>
+                    <span>I can construct the perfect layout for your website using HTML and make it look as pleasing as
+                        possible</span>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3"></i>
+                    <h2>Design</h2>
+                    <span>I can make your site visually pleasing with a variety of styling languages and libraries, such
+                        as, CSS, SCSS, Bootstrap and the list goes on.</span>
+                </div>
+                <div>
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h2>Asp.NetCore</h2>
+                    <span>.NetCore is a software development platform from Microsoft that offers a controlled
+                        programming environment to design, develop and deploy software. It is a combination of Backend
+                        and Frontend with various types of programming languages, tools, and libraries to develop
+                        different kinds of applications.</span>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>Version Control</h2>
+                    <span>With the use of version control sytems and remote repository hosting services, such as git and
+                        Github respectively, I can manage your site after deploments and make any neccessary changes and
+                        updates when needed.</span>
                 </div>
             </div>
-        </section><!-- /.secton-skills -->
-
-        <section id="service" class="site-section section-services overlay text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>What i do</h3>
-                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="service">
-                            <img src="assets/img/front-end.svg" alt="Front End Developer">
-                            <h4>Front-end</h4>
-                            <p style="text-align:justify;">As a frontend developer, Front-end web development, or
-                                client-side development, refers to working with HTML, CSS and JavaScript, MVC Framework
-                                for a website or web application that allows users to see and interact with them
-                                directly</p>
-                        </div><!-- /.service -->
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="service">
-                            <img src="assets/img/back-end.svg" alt="Back End Developer">
-                            <h4>Back-end</h4>
-                            <p style="text-align:justify;">Utilising SpringBoot, dotNet-MVC and dotNet-MVC-Core
-                                frameworks
-                                for a development that cover server-side web application logic, integration and
-                                activities, like writing REST APIs, creating libraries, and working with system
-                                components unlike frontend
-                                development, which focuses on customer-facing services and programs. As backend
-                                developer I build code that allows a database and an application to communicate with one
-                                another, take care and maintain the back-end of a website, Including databases, servers,
-                                and apps, and they control what you don't see including APIs, e-learning applications,
-                                social media application and more.
+        </div>
+    </section>
+    <section class="projects py-3" id="projects">
+        <div class="container">
+            <h1 class="sec-head">Projects</h1>
+            <div class="project my-5">
+                <div class="project-content left">
+                    <h2 class="my-1 head-out">Student Management System</h2>
+                    <div class="content">
+                        <div class="con-div">
+                            <h2 class="my-1 head-in">Student Management System</h2>
+                            <p>A Github profile finder that allows users to search for any authenticated Github account
+                                holder, and display related information such as Company name, Blog name, repository
+                                count, latest followers and more.</p>
+                            <p class="tech-stack">
+                                <span>Java</span>
+                                <span>Springboot</span>
+                                <span>Maven</span>
+                                <span>Jpa</span>
+                                <span>SQL</span>
+                                <span>Thymeleaf</span>
                             </p>
-                        </div><!-- /.service -->
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="service">
-                            <img src="assets/img/consultancy.svg" alt="Coding">
-                            <h4>Consultancy</h4>
-                            <p style="text-align:justify;">As well as providing development services, I can also help
-                                you decide strategic roadmaps
-                                via consultancy services.</p>
-                        </div><!-- /.service -->
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.secton-services -->
-
-        <section id="portfolio" class="site-section section-portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h3>My recent Works</h3>
-                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="./assets/img/Portfolio-1.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Project Title</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span
-                                        class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="./assets/img/Portfolio-2.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Project Title</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span
-                                        class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="./assets/img/Portfolio-3.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Project Title</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span
-                                        class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="./assets/img/Portfolio-4.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Project Title</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span
-                                        class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="./assets/img/Portfolio-5.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Project Title</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span
-                                        class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="./assets/img/Portfolio-6.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Project Title</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span
-                                        class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.secton-portfolio -->
-
-        <section class="site-section section-counters text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="2" data-speed="2000">0</p>
-                        <h4>Years Experience</h4>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="10" data-speed="2000">0</p>
-                        <h4>Projects Delivered</h4>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
-                        <h4>Seconds on this site!<br>What are you waiting for?</h4>
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.section-counters -->
-
-        <section id="contact" class="site-section section-form text-center">
-            <div class="container">
-
-                <h3>Contact</h3>
-                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                <form>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="email" name="email" class="form-control" placeholder="Email" required>
-                        </div>
-                        <div class="col-sm-12">
-                            <textarea name="message" id="mesaage" class="form-control" placeholder="Message"
-                                required></textarea>
+                            <div class="links-in my-1">
+                                <a href="https://github.com/oladeleidowu/student-management-system" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/oladeleidowu/student-management-system/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <button href="#" class="btn btn-border" type="submit">Hire Me <span
-                            class="glyphicon glyphicon-send"></span></button>
-                </form>
+                    <div class="links my-1">
+                        <a href="https://github.com/oladeleidowu/student-management-system" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/oladeleidowu/student-management-system" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-img right">
+                    <img src="/images/StudentManagemennt.png" alt="">
+                </div>
             </div>
-        </section><!-- /.section-form -->
-
-    </main><!-- /#main -->
-
-    <footer id="colophon" class="site-footer">
+            <div class="project">
+                <div class="project-content right">
+                    <h2 class="my-1 head-out">Institute Management App APIs </h2>
+                    <div class="content">
+                        <div class="con-div">
+                            <h2 class="my-1 head-in">Institute Management</h2>
+                            <p>An application that can be usefull for financial workers to quickly calculate loan
+                                payments and total interest.</p>
+                            <p class="tech-stack">
+                                <span>Java</span>
+                                <span>Springboot</span>
+                                <span>Maven</span>
+                                <span>Jpa</span>
+                                <span>SQL</span>
+                                <span>Postman</span>
+                            </p>
+                            <div class="links-in my-1">
+                                <a href="https://github.com/YusufsDesigns/Loan-calculator" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://loan-calculator-gamma.vercel.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links my-1">
+                        <a href="https://github.com/YusufsDesigns/Loan-calculator" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://loan-calculator-gamma.vercel.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-img left">
+                    <img src="/images/project.png" alt="">
+                </div>
+            </div>
+            <div class="project my-5">
+                <div class="project-content left">
+                    <h2 class="my-1 head-out">Monster Energy App</h2>
+                    <div class="content">
+                        <div class="con-div">
+                            <h2 class="my-1 head-in">Github Profile Finder</h2>
+                            <p>A Github profile finder that allows users to search for any authenticated Github account
+                                holder, and display related information such as Company name, Blog name, repository
+                                count, latest followers and more.</p>
+                            <p class="tech-stack">
+                                <span>HTML</span>
+                                <span>Bootsrap</span>
+                                <span>CSS</span>
+                            </p>
+                            <div class="links-in my-1">
+                                <a href="https://github.com/YusufsDesigns/Github-profile-finder" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://github-profile-finder-three.vercel.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links my-1">
+                        <a href="https://github.com/YusufsDesigns/Github-profile-finder" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://github-profile-finder-three.vercel.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-img right">
+                    <img src="/images/monster.png" alt="">
+                </div>
+            </div>
+            <div class="project my-5">
+                <div class="project-content right">
+                    <h2 class="my-1 head-out">Web Book App</h2>
+                    <div class="content">
+                        <div class="con-div">
+                            <h2 class="my-1 head-in">WebBook App</h2>
+                            <p>I built a weather application to display the weather conditions of over 200k cities with
+                                a change of background depending onthe weather condition and time of day of the
+                                particular city.</p>
+                            <p class="tech-stack">
+                                <span>Asp.NetCore</span>
+                                <span>C#</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootsrap</span>
+                            </p>
+                            <div class="links-in my-1">
+                                <a href="https://github.com/oladeleidowu/BimBookWeb" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/oladeleidowu/BimBookWeb" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links my-1">
+                        <a href="https://github.com/oladeleidowu/BimBookWeb" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/oladeleidowu/BimBookWeb" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-img left">
+                    <img src="/images/Asp_net2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="other-projects py-3">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                    <a class="icon facebook-bg" href="#"><i class="icon-facebook"></i></a>
-                    <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
-                    <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
-                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+            <h2 class="text-center">Other Projects</h2>
+            <div class="other-project-container py-3">
+                <div class="other-project">
+                    <div class="content">
+                        <div class="con-div">
+                            <div class="links my-1">
+                                <a href="https://github.com/YusufsDesigns/Creative-Agency" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://creative-agency-five.vercel.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <h2>Creative Agency</h2>
+                            <p>A static creative agency website that comes with a fully responsive menu and beautiful
+                                transitions</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3">
-                    <p class="copyright">2022. All Rights Reserved bimcode</p>
+                <div class="other-project">
+                    <div class="content">
+                        <div class="con-div">
+                            <div class="links my-1">
+                                <a href="https://github.com/YusufsDesigns/Loruki" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://bright-banoffee-16d154.netlify.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <h2>Loruki</h2>
+                            <p>A fake cloud hosting platform, fully responsive with a functional form submmision, and
+                                animations</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-xs-3">
-                    <div class="text-right page-scroll">
-                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
+                <div class="other-project">
+                    <div class="content">
+                        <div class="con-div">
+                            <div class="links my-1">
+                                <a href="https://github.com/YusufsDesigns/Number-Guessing-Game" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://number-guessing-game-swart.vercel.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <h2>Number Guessing Game</h2>
+                            <p>A number guessing game that allows user to enter a number within the range of 1 to 100,
+                                and also provide assistance inorder to guess the right number.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-project">
+                    <div class="content">
+                        <div class="con-div">
+                            <div class="links my-1">
+                                <a href="https://github.com/YusufsDesigns/Hulu-landing-page-clone" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://hulu-landing-page-clone-psi.vercel.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <h2>Hulu Landing Page Clone</h2>
+                            <p>A static clone of the hulu landing page website, fully responsive and a JavaScript login
+                                module</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-project">
+                    <div class="content">
+                        <div class="con-div">
+                            <div class="links my-1">
+                                <a href="https://github.com/YusufsDesigns/Advice-Generator-App" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://advice-generator-app-sooty.vercel.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <h2>Advice Generator</h2>
+                            <p>An application that generates random APIs on click, with the use of the Advice Slip API.
+                            </p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Advice Slip API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-project">
+                    <div class="content">
+                        <div class="con-div">
+                            <div class="links my-1">
+                                <a href="https://github.com/oladeleidowu/Temperature-Converter" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://temperature-converter-nine.vercel.app/" target="_blank"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <h2>Temperature Converter</h2>
+                            <p>An app that converts celcius to kelvin and Fahrenheit, and vice versa, and also displays
+                                the formula used to calculate it.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer><!-- /#footer -->
+    </section>
+    <section class="contact py-5" id="contact">
+        <div class="container text-center">
+            <h3>Contact Me</h3>
+            <h1>Glad you made it this far</h1>
+            <p>I do hope my display up until this point was not a waste of your time. Do consider me for future jobs and
+                opportunities.</p>
+            <a href="mailto: yusuf.olaoluwalawal@outlook.com" class="btn my-2">Hire Me</a>
+            <div class="links">
+                <a href="https://twitter.com/bimcode" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/oladeleidowu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/abimcode/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+2348029958673" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+    <div class="inspiration">
+        Design inspired by <a href="https://brittanychiang.com/">Brittany Chiang</a>
+    </div>
 
-    <!-- Modals -->
-    <div id="portfolioItem1" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-                    <img class="img-res" src="assets/img/portfolio-1.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique.
-                        Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar
-                        a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis
-                        consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam
-                        sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                        hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-fill">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    <script src="/script.js"></script>
+    <script>
+        ScrollReveal({
+            distance: '60px',
+            duration: 2000,
+            delay: 200
+        });
 
-    <div id="portfolioItem2" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-                    <img class="img-res" src="assets/img/portfolio-2.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique.
-                        Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar
-                        a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis
-                        consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam
-                        sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                        hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-fill">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem3" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-                    <img class="img-res" src="assets/img/portfolio-3.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique.
-                        Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar
-                        a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis
-                        consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam
-                        sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                        hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-fill">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem4" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-                    <img class="img-res" src="assets/img/portfolio-4.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique.
-                        Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar
-                        a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis
-                        consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam
-                        sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                        hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-fill">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem5" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-                    <img class="img-res" src="assets/img/portfolio-5.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique.
-                        Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar
-                        a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis
-                        consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam
-                        sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                        hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-fill">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem6" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-                    <img class="img-res" src="assets/img/portfolio-6.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique.
-                        Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar
-                        a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis
-                        consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam
-                        sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                        hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-fill">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/skrollr.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <script src="assets/js/script.js"></script>
-
+        ScrollReveal().reveal('.navbar .logo', { delay: 100, origin: 'top' });
+        ScrollReveal().reveal('.navbar .pages li', { delay: 400, origin: 'top', interval: 200 });
+        ScrollReveal().reveal('.header .hero span', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.header .hero .title', { delay: 800, origin: 'bottom' });
+        ScrollReveal().reveal('.header .hero .lead', { delay: 1000, origin: 'bottom' });
+        ScrollReveal().reveal('.header .hero p', { delay: 1200, origin: 'bottom' });
+        ScrollReveal().reveal('.header .hero button.btn', { delay: 1400, origin: 'bottom' });
+        ScrollReveal().reveal('.header .social-icons', { delay: 1800, origin: 'bottom' });
+        ScrollReveal().reveal('.sec-head', { delay: 400, origin: 'bottom' });
+        ScrollReveal().reveal('.about-content .contents', { delay: 400, origin: 'left' });
+        ScrollReveal().reveal('.about-content .img', { delay: 400, origin: 'right' });
+        ScrollReveal().reveal('.skills-header', { delay: 600, origin: 'left' });
+        ScrollReveal().reveal('.skill-set div', { delay: 600, origin: 'top', interval: 200 });
+        ScrollReveal().reveal('.project', { delay: 400, origin: 'bottom' });
+        ScrollReveal().reveal('.other-projects .other-project', { delay: 600, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.contact', { delay: 400, origin: 'bottom' });
+    </script>
 </body>
 
 </html>
